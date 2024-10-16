@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "daisyui": "^4.12.13",
+    "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "bulma": "^1.0.2"
+  }
+}

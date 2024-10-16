@@ -1,0 +1,228 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+body {
+    font-family: "Limelight", sans-serif;
+}
+
+.img-container {
+    background-image: url("/images/collection-list-of-movie-posters-with-close-up-of-a-single-v0-g69mvv911dgd1.webp");
+    background-position: center top 27%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+input {
+    width: 30rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: aliceblue;
+    font-family: "Limelight", sans-serif;
+}
+
+.header-text {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: var(--bulma-link-text);
+    font-weight: bold;
+    border-radius: 10px;
+    
+    padding: 1rem;
+    font-family: "Limelight", sans-serif;
+}
+
+.control {
+    display: flex;
+    font-family: "Limelight", sans-serif;
+}
+
+.is-cursor-pointer {
+    cursor: pointer !important;
+}
+
+.transform {
+    -webkit-transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 7.6rem;
+    margin: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(53, 51, 51, 0.2);
+    transform: translateY(-3px);
+}
+
+.card {
+    height: 8rem;
+    width: 14rem;
+    margin: 3rem auto;
+    
+}
+
+.image img {
+    object-fit: contain;
+    border: 6px solid var(--bulma-link-text);
+    
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form {
+    display: flex;
+}
+
+a {
+    background-color: rgb(37, 37, 37);
+    padding: 1rem;
+    margin-left: .5rem;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+a:hover {
+    background-color: #3b3b3b;
+}
+
+button {
+    width: 6rem;
+}
+
+.add-button {
+    background-color: #0032d4;
+}
+
+.movie-info {
+    padding: 2rem;
+    font-size: .9rem;
+    width: 31em;
+    height: 22rem;
+    background-color: rgb(37, 37, 37);
+    border: 5px solid var(--bulma-link-text);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    z-index: 1;
+    border-radius: 20px;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.wishlist-btn {
+    background-color: var(--bulma-background);
+    width: 6rem;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+.wishlist-btn:hover {
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    margin: .2rem;
+    width: 20px;
+}
+
+.close-btn-closed {
+    display: none;
+}
+
+.greentext {
+    color: green;
+}
+
+.redtext {
+    color: red;
+}
+
+.remove-btn {
+    color: rgb(244, 73, 73);
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: .2rem;
+    font-family: "Limelight", sans-serif;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.remove-btn:hover {
+    background-color: white;
+
+}
+
+.remove-btn::after {
+    transform: translateY(10px);
+}
+
+.hidden {
+    animation: fadeOut 0.5s forwards;
+}
+
+.movie-info {
+    transition: opacity 0.5s ease-out;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14rem;
+
+}
+
+@media only screen and (max-width: 550px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+

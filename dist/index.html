@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en" data-theme="userTheme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Search-Engine</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="img-container">
+            <div>
+                <h1 class="header-text">Movie Engine</h1>
+            </div>
+            <div class="control">
+                <form id="form-search" action="search">
+                    <input id="search-input" class="input is-large" type="text" placeholder="Find your film" />
+                    <button class="button is-large" type="submit">Search</button>
+                </form>
+                <a href="wishlist.html">Watch List</a>
+            </div>
+        </div>
+    </header>
+    <section id="movie-information">
+        
+
+    </section>
+    <section id="movies" class="grid-container">
+        <!-- Movie cards will be injected here -->
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
