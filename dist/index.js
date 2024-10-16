@@ -11,8 +11,6 @@ loadWatchlist();
 handleLastMovieList(moviesList);
 handleWatchList(watchlist);
 
-console.log(moviesList);
-console.log(watchlist);
 
 if (window.location.href.includes("index.html")) {
     searchInput.addEventListener("submit", function (e) {
@@ -45,7 +43,7 @@ document.addEventListener("click", async function (event) {
 
     if (elementClicked.tagName === "IMG" && movieId) {
         try {
-            const res = await fetch(`http://www.omdbapi.com/?apikey=a01f471e&t=${movie.Title}`);
+            const res = await fetch(`https://www.omdbapi.com/?apikey=a01f471e&t=${movie.Title}`);
             const data = await res.json();
             if (res.ok && data.Response === "True") {
                 movieInformation.classList.remove("hidden", "close-btn-closed");
@@ -62,7 +60,6 @@ document.addEventListener("click", async function (event) {
                         <button data-id="${data.imdbID}" class="wishlist-btn">Watch List</button>
                         <p id="alert-message"></p>
                     </div>`;
-                console.log(data);
                 movieInformation.innerHTML = movieInfoHtml;
             } else {
                 console.log("Error:", data.Error);
@@ -84,7 +81,6 @@ document.addEventListener("click", async function (event) {
                 alertMessageContainer.textContent = alertMessage;
                 alertMessageContainer.className = "greentext";
             } else {
-                console.error("Alert message container not found");
             }
         } else {
             alertMessage = `${movie.Title} Already exists!`;
@@ -104,7 +100,6 @@ document.addEventListener("click", async function (event) {
             watchlist.splice(index, 1);
             saveWatchlist();
             handleWatchList(watchlist);
-            console.log(`Removed movie with ID: ${movieId}`);
         } else {
             console.error(`Movie with ID: ${movieId} not found in watchlist.`);
         }
