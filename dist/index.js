@@ -59,7 +59,7 @@ document.addEventListener("click", async function (event) {
                         <p>Genre: ${data.Genre}</p>
                         <p>imdbRating: ${data.imdbRating}</p>
                         <p>Movie Plot: ${data.Plot}</p>
-                        <button data-id="${data.imdbID}" class="wishlist-btn">Wish List</button>
+                        <button data-id="${data.imdbID}" class="wishlist-btn">Watch List</button>
                         <p id="alert-message"></p>
                     </div>`;
                 console.log(data);

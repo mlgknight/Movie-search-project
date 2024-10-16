@@ -5,11 +5,13 @@ body {
 }
 
 .img-container {
-    background-image: url("/images/collection-list-of-movie-posters-with-close-up-of-a-single-v0-g69mvv911dgd1.webp");
-    background-position: center top 27%;
-    background-repeat: no-repeat;
+    background-image: url("/images/american-movie-posters-z0puq43u0qbtr6j2.webp");
+    background-repeat: no-repeat centecr;
     background-size: cover;
-    height: 45vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,6 +19,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 2rem;
+    
 }
 
 input {
