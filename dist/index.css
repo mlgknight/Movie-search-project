@@ -1,8 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
 
-body {
-    font-family: "Limelight", sans-serif;
-}
+
 
 .img-container {
     background-image: url("/images/american-movie-posters-z0puq43u0qbtr6j2.webp");
@@ -37,8 +35,7 @@ input {
     background-color: var(--bulma-link-text);
     font-weight: bold;
     border-radius: 10px;
-    
-    padding: 1rem;
+    padding: .3rem 2rem;
     font-family: "Limelight", sans-serif;
 }
 
@@ -88,10 +85,6 @@ input {
     text-align: center;
 }
 
-form {
-    display: flex;
-}
-
 a {
     background-color: rgb(37, 37, 37);
     padding: 1rem;
@@ -110,7 +103,8 @@ a:hover {
 }
 
 button {
-    width: 6rem;
+    width: 10rem;
+
 }
 
 .add-button {
@@ -173,6 +167,10 @@ button {
     color: red;
 }
 
+form {
+    gap: 1em;
+}
+
 .remove-btn {
     color: rgb(244, 73, 73);
     margin: 0 auto;
@@ -211,13 +209,30 @@ button {
 
 }
 
+
+.form-search {
+    text-align: center;
+    gap: 10rem;
+}
+
 @media only screen and (max-width: 550px) {
     .grid-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 10rem;
     }
+    .card {
+        margin-bottom: 2rem;
+    }
+    .movie-info {
+        width: 23rem;
+    }
+    form {
+        gap: .7rem;
+    }
+
 }
 
 @keyframes fadeOut {
