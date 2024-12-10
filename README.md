@@ -2,6 +2,7 @@ Customer Management System is a complete Java-based application; it was develope
 
 
 This is the Login screen of our application.
+
 <br>
 <img width="211" alt="Screenshot_1" src="https://github.com/user-attachments/assets/0ef3388d-1a73-4991-b1c7-bf694f042ee6">
 
@@ -14,5 +15,6 @@ This is the menu for users to select an option to move on to the next part of th
 <br>
 
 Here we allow users to do CRUD, which allows easy management of the database.
+
 <img width="518" alt="Screenshot_3" src="https://github.com/user-attachments/assets/945eed60-e3e4-4b4b-9af1-60df7037e30f">
 
