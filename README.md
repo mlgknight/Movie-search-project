@@ -2,6 +2,7 @@ Customer Management System is a complete Java-based application; it was develope
 
 
 This is the Login screen of our application.
+<br>
 <img width="211" alt="Screenshot_1" src="https://github.com/user-attachments/assets/0ef3388d-1a73-4991-b1c7-bf694f042ee6">
 
 <br>
