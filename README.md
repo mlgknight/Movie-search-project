@@ -1,1 +1,1 @@
-
+The Movie Search Application is a powerful, interactive web application intended to deliver comprehensive movie information to the user. This application enables users to search movies, view detailed information, and explore related content seamlessly. It leverages modern web technologies and integrates with external APIs to offer an extensive database of movies.
